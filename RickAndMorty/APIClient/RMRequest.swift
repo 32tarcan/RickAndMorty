@@ -42,9 +42,9 @@ final class RMRequest {
             }).joined(separator: "&")
             
             string += argumentString
-    }
-            return string
-    
+        }
+        return string
+        
     }
     
     /// Computed & costructed API url
@@ -71,6 +71,13 @@ final class RMRequest {
         self.pathComponents = pathComponents
         self.queryParameters = queryParameters
     }
+    
+    
 }
+
+extension RMRequest {
+    static let listCharactersRequests = RMRequest(endpoint: .character)
+}
+
 
 

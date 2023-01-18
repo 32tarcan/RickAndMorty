@@ -1,5 +1,5 @@
 //
-//  CharacterListViewViewModel.swift
+//  RMCharacterListViewViewModel.swift
 //  RickAndMorty
 //
 //  Created by Bahadır Tarcan on 18.01.2023.
@@ -8,7 +8,7 @@
 import UIKit
 
 
-final class CharacterListViewViewModel: NSObject {
+final class RMCharacterListViewViewModel: NSObject {
     
     func fetchCharacters() {
         
@@ -26,7 +26,7 @@ final class CharacterListViewViewModel: NSObject {
     }
 }
 
-extension CharacterListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension RMCharacterListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20

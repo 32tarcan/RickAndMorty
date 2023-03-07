@@ -8,20 +8,20 @@
 import UIKit
 
 /// VC to show details about single episode
-final class RMEpisodeDetailViewController: UIViewController {
+final class RMEpisodeDetailViewController: UIViewController, RMEpisodeDetailViewViewModelDelegate {
     
     private let viewModel: RMEpisodeDetailViewViewModel
+     
     
     private let detailView = RMEpisodeDetailView()
     
     //MARK: - Init
     
     init(url: URL?) {
-        self.viewModel = .init(endpointUrl: url)
+        self.viewModel = RMEpisodeDetailViewViewModel(endpointUrl: url)
         super.init(nibName: nil, bundle: nil)
         view.addSubview(detailView)
-        addConstraints()
-        didTapSearch()
+       
     }
     
     required init?(coder: NSCoder) {
@@ -32,9 +32,14 @@ final class RMEpisodeDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(detailView)
+        addConstraints()
         title = "Episode"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action:
+             #selector(didTapSearch))
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(didTapSearch))
+        viewModel.delegate = self
+        viewModel.fetchEpisodeData()
         
     }
     
@@ -53,6 +58,10 @@ final class RMEpisodeDetailViewController: UIViewController {
         ])
     }
     
+    //MARK: - Delegate
     
+    func didFetchEpisodeDetails() {
+        detailView.configure(with: viewModel)
+    }
     
 }

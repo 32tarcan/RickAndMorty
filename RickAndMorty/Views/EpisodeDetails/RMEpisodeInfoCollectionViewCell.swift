@@ -10,10 +10,28 @@ import UIKit
 class RMEpisodeInfoCollectionViewCell: UICollectionViewCell {
     static let cellIdentifier = "RMEpisodeInfoCollectionViewCell"
     
+    private let titlaLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 20, weight: .medium)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private let valueLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 20, weight: .regular)
+        label.textAlignment = .right
+        label.numberOfLines = 0
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.backgroundColor = .secondarySystemBackground
+        contentView.addSubviews(titlaLabel, valueLabel)
         setUpLayer()
+        addConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -26,6 +44,14 @@ class RMEpisodeInfoCollectionViewCell: UICollectionViewCell {
         layer.borderWidth = 1
         layer.borderColor = UIColor.secondaryLabel.cgColor
     }
+    
+    private func addConstraints() {
+        NSLayoutConstraint.activate([
+        
+        
+        ])
+    }
+    
     
     override func prepareForReuse() {
         super.prepareForReuse()

@@ -35,7 +35,13 @@ final class RMEpisodeDetailViewViewModel {
     
     init(endpointUrl: URL?) {
         self.endpointUrl = endpointUrl
-        
+    }
+    
+    public func character(at index: Int) -> RMCharacter? {
+        guard let dataTuple = dataTuple else {
+            return nil
+        }
+        return dataTuple.characters[index]
     }
     
     //MARK: - Private
@@ -49,7 +55,7 @@ final class RMEpisodeDetailViewViewModel {
         
         var createdString = episode.created
         if let date = RMCharacterInfoCollectionViewCellViewModel.dateFormetter.date(from: episode.created) {
-            createdString = RMCharacterInfoCollectionViewCellViewModel.shortDateFormetter.string(from: date) 
+            createdString = RMCharacterInfoCollectionViewCellViewModel.shortDateFormetter.string(from: date)
                episode.created
         }
         

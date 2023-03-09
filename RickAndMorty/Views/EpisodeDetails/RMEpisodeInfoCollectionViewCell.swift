@@ -48,11 +48,11 @@ class RMEpisodeInfoCollectionViewCell: UICollectionViewCell {
     private func addConstraints() {
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4),
-            titleLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 4),
+            titleLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 10),
             titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -4),
             
            valueLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4),
-           valueLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -4),
+           valueLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10),
            valueLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -4),
             
             titleLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.47),

@@ -7,6 +7,11 @@
 
 import UIKit
 
+// Dynamic search option view
+// Render results
+// Render no results zero state
+// Searching / API Call
+
 final class RMSearchViewController: UIViewController {
     
     struct Config {
@@ -14,11 +19,24 @@ final class RMSearchViewController: UIViewController {
             case character
             case episode
             case location
+            
+            var title: String {
+                switch self {
+                case .character:
+                    return "Search Characters"
+                case .location:
+                    return "Search Location"
+                case .episode:
+                    return "Search Episode"
+                }
+            }
         }
         let type: `Type`
     }
     
     private let config: Config
+    
+    //MARK: - Init
     
     init(config: Config) {
         self.config = config
@@ -28,10 +46,12 @@ final class RMSearchViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("Unspupperted")
     }
+    
+    //MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Search"
+        title = config.type.title
         view.backgroundColor = .systemBackground
 
         

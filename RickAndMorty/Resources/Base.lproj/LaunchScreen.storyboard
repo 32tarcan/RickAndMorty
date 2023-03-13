@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rick &amp; Morty App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKB-xr-hNP">
-                                <rect key="frame" x="0.0" y="234" width="393" height="759"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rick &amp; Morty App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKB-xr-hNP">
+                                <rect key="frame" x="0.0" y="295" width="393" height="698"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -32,8 +31,12 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="mcd-XF-CPC" secondAttribute="bottom" id="35l-RU-eZn"/>
                             <constraint firstItem="mcd-XF-CPC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Heu-lA-NFx"/>
+                            <constraint firstItem="KKB-xr-hNP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="236" id="Kt1-8e-idD"/>
+                            <constraint firstAttribute="bottom" secondItem="KKB-xr-hNP" secondAttribute="bottom" constant="-141" id="RmZ-1t-KJA"/>
                             <constraint firstItem="mcd-XF-CPC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bKW-sR-tTY"/>
+                            <constraint firstItem="KKB-xr-hNP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iIb-u0-82A"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mcd-XF-CPC" secondAttribute="trailing" id="s0P-b2-hHa"/>
+                            <constraint firstItem="KKB-xr-hNP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tiO-yG-c65"/>
                         </constraints>
                     </view>
                 </viewController>

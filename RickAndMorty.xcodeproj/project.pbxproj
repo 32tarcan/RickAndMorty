@@ -196,7 +196,7 @@
 				AFDE88F229BF6031008CDBD8 /* Search */,
 				AF241C9029AF6F9F00CF5508 /* RMCharacterDetailViewController.swift */,
 				AF1BA2D029B51A9E009370C8 /* RMEpisodeDetailViewController.swift */,
-				AF91BACC29B76020006B648A /* RMSearchViewController.swift */,
+				AFB935AA29BE6574009A58FB /* RMLocationDetailViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -414,7 +414,7 @@
 		AFDE88F229BF6031008CDBD8 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				AFB935AA29BE6574009A58FB /* RMLocationDetailViewController.swift */,
+				AF91BACC29B76020006B648A /* RMSearchViewController.swift */,
 				AFDE88F029BF5EA8008CDBD8 /* RMSearchOptionPickerViewController.swift */,
 			);
 			path = Search;

@@ -20,7 +20,7 @@ SwiftyJSON: Used for parsing JSON data received from the API.
 UIKit: Used for building the user interface of the application.
 
 
-![ezgif com-crop](https://user-images.githubusercontent.com/101280910/225419052-345e324b-d330-4433-b2bb-9edd7674e5f9.gif)
+# RickAndMorty![ezgif com-crop](https://user-images.githubusercontent.com/101280910/225419052-345e324b-d330-4433-b2bb-9edd7674e5f9.gif)
 
 
 

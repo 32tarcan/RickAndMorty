@@ -1,6 +1,6 @@
 **Rick and Morty Characters App:**
 
-- This is a simple iOS application that displays information about characters from the animated TV show, Rick and Morty. The app retrieves character data from the Rick and Morty API (https://rickandmortyapi.com) and displays it in a user-friendly way.
+-  This is a simple iOS application that displays information about characters from the animated TV show, Rick and Morty. The app retrieves character data from the Rick and Morty API (https://rickandmortyapi.com) and displays it in a user-friendly way.
 
 **Features:**
 
